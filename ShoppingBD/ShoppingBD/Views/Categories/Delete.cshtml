@@ -1,4 +1,4 @@
-﻿@model ShoppingBD.Data.Entities.Country
+﻿@model ShoppingBD.Data.Entities.Category
 
 @{
     ViewData["Title"] = "Delete";
@@ -6,12 +6,14 @@
 
 <h1>Borrar</h1>
 
-<h3>¿Está seguo de borrar el país?</h3>
+<h3>¿Está seguo de borrar la categoría?</h3>
 <div>
-    <partial name = "_CountryDetails"/>    
+    <partial name = "_CategoryDetails"/>    
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Borrar" class="btn btn-outline-danger" /> 
         <a asp-action="Index"class="btn btn-outline-success" >Regresar</a>
     </form>
 </div>
+
+
