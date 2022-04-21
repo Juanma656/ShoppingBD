@@ -12,5 +12,9 @@ namespace ShoppingBD.Data.Entities
         
         
         public string Name { get; set; }
+        public ICollection<State> States { get; set; }
+        [Display(Name = "Departamentos/Estados")]
+        public int StatesNumber => States == null ? 0 : States.Count; 
+
     }
 }

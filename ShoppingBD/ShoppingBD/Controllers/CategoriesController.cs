@@ -121,6 +121,8 @@ namespace ShoppingBD.Controllers
 
             return View(category);
         }
+
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

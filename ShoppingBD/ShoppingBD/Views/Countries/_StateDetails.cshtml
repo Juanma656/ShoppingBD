@@ -1,5 +1,5 @@
-﻿@model ShoppingBD.Data.Entities.Country
-<h4>País</h4>
+﻿@model ShoppingBD.Data.Entities.State
+<h4>Departemento/Estado</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -9,12 +9,13 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StatesNumber)
+            @Html.DisplayFor(model => model.CitiesNumber)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StatesNumber)
+            @Html.DisplayNameFor(model => model.CitiesNumber)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
     </dl>
+
